@@ -1,0 +1,333 @@
+ <p title = "gholam"> asghar </p>
+        
+<p> hello gholam </p>
+
+<a href="https://www.farsnews.com" > farsnews</a>
+
+<button onclick="alert('hello gholam');"> click me </button>
+
+<ul>
+    <li> pizza </li>
+    <li> sandwich </li>
+    <li> soda </li>
+    <li> kebab-case</li>
+</ul>        
+
+<p> hello  <br /> are you crazy </p>
+
+<img src="H:\z-University\WebPrograming\workplace\pic\fateme.JPG" style="width:100px ; height:100px;" alt="Fateme Hosna" />
+
+<html lang = "en-US">
+
+<p title="John 'ShotGun' Nelson">
+
+<p title='John "ShotGun" Nelson'>
+
+<h1 style="font-size:60px;">Heading 1</h1>
+
+<hr> horizontal rule
+
+<head>
+<title>My First HTML</title>
+<meta charset="UTF-8">
+</head
+<pre>
+My Bonnie lies over the ocean
+My Bonnie lies over the sea
+My Bonnie lies over the ocean
+Oh, bring back my Bonnie to me.
+</pre
+<body style="background-color:powderblue;"
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p
+<p style="text-align:center;">Centered paragraph.</p
+<b>This text is bold</b>
+<i>This text is italic</i>
+<strong>This text is strong</strong>
+<em>This text is emphasized</em>
+<h2>HTML <small>Small</small> Formatting</h2>
+<h2>HTML <mark>Marked</mark> Formatting</h2>
+<p>My favorite color is <del>blue</del> red.</p>
+<p>My favorite <ins>color</ins> is red.</p>
+<p>This is <sub>subscripted</sub> text.</p>
+<p>This is <sup>superscripted</sup> text.</p>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+</blockquote>
+
+<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+<p>changiz</p>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<bdo dir="rtl">This text will be written from right to left</bdo>
+sihT
+
+<p dir="rtl">This text will be written from right to left</p>
+                    this is
+
+ChangeElement
+attribute
+element.style.property = new style
+element.innerHTML =  new html content
+element.attribute = new value
+method
+element.setAttribute(attribute, value)
+
+FindElement
+document.getElementsByClassName(name)
+document.getElementsByTagName(name)  x[0] , x[1] , x[2] ,x[3] ;
+document.getElementById(id) // .getElementsByClassName x[0] 
+
+Add&DeleteElement
+document.createElement(element)
+document.removeChild(element)
+document.appendChild(element)
+document.replaceChild(new, old)
+
+AddEventHandler
+document.getElementById(id).onclick = function(){code}
+let a = document.getElementById("click").onclick = function hello(){ alert('hello')} ; p tag 
+
+var x = document.querySelectorAll("p.intro"); x[0] x[1] , p element with class intro ; 
+
+<div id="container">
+<div id="animate"></div>
+</div>
+#animate {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: red;
+}
+#container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background: yellow;
+}
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_3
+
+<h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onload
+
+<body onload="checkCookies()">
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_onchange
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_mouseover
+
+element.addEventListener("click", function(){ alert("Hello World!"); });
+
+document.getElementById("id02").innerHTML = document.getElementById("id01").firstChild.nodeValue;
+document.getElementById("id02").innerHTML = document.getElementById("id01").childNodes[0].nodeValue; <title id="id01">hello</title>
+document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;
+
+<h1 id="id01">My First Page</h1>
+document.getElementById("id01").nodeName;  --> H1
+
+<h1 id="id01">My First Page</h1>
+document.getElementById("id01").nodeType; --> 1 
+ELEMENT_NODE	1	<h1 class="heading">W3Schools</h1>
+ATTRIBUTE_NODE	2	 class = "heading" (deprecated)
+TEXT_NODE	3	W3Schools
+COMMENT_NODE	8	<!-- This is a comment -->
+DOCUMENT_NODE	9	The HTML document itself (the parent of <html>)
+DOCUMENT_TYPE_NODE	10	<!Doctype html>
+
+var para = document.createElement("p");  h1 , ul ,li 
+var node = document.createTextNode("This is new.");
+para.appendChild(node);
+var element = document.getElementById("div1");
+element.appendChild(para);
+
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+var element = document.getElementById("div1");
+var child = document.getElementById("p1");
+element.insertBefore(para,child);
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
+parent.removeChild(child); == child.parentNode.removeChild(child) 
+
+var para = document.createElement("p");
+var node = document.createTextNode("This is new.");
+para.appendChild(node);
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
+parent.replaceChild(para, child);
+
+var myCollection = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = myCollection.length;
+
+var myCollection = document.getElementsByTagName("p");
+var i;
+for (i = 0; i < myCollection.length; i++) {
+  myCollection[i].style.backgroundColor = "red";
+}
+
+var myNodeList = document.querySelectorAll("p");
+var y=myNodeList[0] ;
+myNodelist.length;
+
+Only the NodeList object can contain attribute nodes and text nodes
+________________________________________________________________________________________________
+css 
+p { 
+  all paragraphs 
+}
+.gholam {
+  class gholam 
+}
+h1.akbar {
+  h1 that have akbar class 
+}
+#p01 {
+  attributes of id p01
+}
+________________________________________________________________________________________________
+Use the CSS border property for borders
+Use the CSS padding property for space inside the border
+Use the CSS margin property for space outside the border
+________________________________________________________________________________________________
+link , style , <style> 
+________________________________________________________________________________________________
+a tag configuration
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_colors
+
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_button
+________________________________________________________________________________________________
+grid-template-columns repeats(3 ,1fr ) 
+________________________________________________________________________________________________
+function myFunction(x, y) {
+  if (y === undefined) {
+    y = 0;
+  } 
+}
+________________________________________________________________________________________________
+function (a=1, b=1) { // function code }
+________________________________________________________________________________________________
+x = findMax(1, 123, 500, 115, 44, 88);
+
+function findMax() {
+  var i;
+  var max = -Infinity;
+  for (i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+}
+________________________________________________________________________________________________
+function myFunction(a, b) {
+  return a * b;
+}
+window.myFunction(10, 2);    // Will also return 20
+________________________________________________________________________________________________
+// This is a function constructor:
+function myFunction(arg1, arg2) {
+  this.firstName = arg1;
+  this.lastName  = arg2;
+}
+// This creates a new object
+var x = new myFunction("John", "Doe");
+x.firstName;                             // Will return "John"
+________________________________________________________________________________________________
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_call_call
+________________________________________________________________________________________________
+In this example the fullName method of person is applied on person1:
+Example
+var person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person1 = {
+  firstName: "Mary",
+  lastName: "Doe"
+}
+person.fullName.apply(person1);  // Will return "Mary Doe"
+________________________________________________________________________________________________
+var person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+var person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+person.fullName.apply(person1, ["Oslo", "Norway"]);
+
+
+var person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+var person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+person.fullName.call(person1, "Oslo", "Norway");
+
+Math.max.apply(null, [1,2,3]); // Will also return ;
+
+Math.max(1,2,3) ; 
+________________________________________________________________________________________________
+.item.item${$}*30
+item is name of a class written in css file
+________________________________________________________________________________________________
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+________________________________________________________________________________________________
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+_blank - Opens the linked document in a new window or tab
+_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+_parent - Opens the linked document in the parent frame
+_top - Opens the linked document in the full body of the window
+________________________________________________________________________________________________
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+________________________________________________________________________________________________
+<a href="w3schools.com">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0">
+</a>
+________________________________________________________________________________________________
